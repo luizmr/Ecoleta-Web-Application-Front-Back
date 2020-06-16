@@ -50,7 +50,7 @@ Users will have access to the web application, where they can search through Cit
 
 #### **Utilitaries**
 
--   Prototype: **[Figma](https://www.figma.com/)** &rarr;
+-   Prototype: **[Figma](https://www.figma.com/)**
 -   API: **[IBGE API](https://servicodados.ibge.gov.br/api/docs/localidades?versao=1)** &rarr; **<kbd>[API de UFs](https://servicodados.ibge.gov.br/api/docs/localidades?versao=1#api-ufs-estadosget)</kbd>**, **<kbd>[API de Municípios](https://servicodados.ibge.gov.br/api/docs/localidades?versao=1#api-municipios-estadosufmunicipiosget)</kbd>**
 -   Editor: **[Visual Studio Code](https://code.visualstudio.com/)** &rarr; Extensions: **<kbd>[SQLite](https://marketplace.visualstudio.com/items?itemname=alexcvzz.vscode-sqlite)</kbd>**
 -   API test: **[Insomnia](https://insomnia.rest/)**
@@ -92,3 +92,5 @@ $ npm start
 ## 📝 License
 
 This project is under the MIT license.
+
+Made with ❤️ by Luiz Marcelo Rocha
