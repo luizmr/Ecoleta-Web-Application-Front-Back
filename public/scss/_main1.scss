@@ -1,0 +1,65 @@
+#page_home .main {
+    max-width: 560px;
+    display: flex;
+    // flex 1 para dar justify no centro -> aumenta a caixa sem precisar usar height
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+
+    @include breakpoint-less(large) {
+        align-items: center;
+    }
+}
+
+#page_home .main h1 {
+    font-size: 54px;
+    margin-top: 0;
+}
+
+#page_home .main p {
+    font-size: 24px;
+    line-height: 1.5;
+    margin-top: 24px;
+}
+
+#page_home .main a {
+    width: 100%;
+    max-width: 300px;
+    margin-top: 40px;
+    background-color: $primaryColor;
+    height: 72px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+
+    transition: 400ms;
+}
+
+#page_home .main a:hover {
+    background-color: #2fb86e;
+}
+
+#page_home .main a span {
+    width: 72px;
+    height: 72px;
+    border-top-left-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#page_home .main a strong {
+    // centraliza o texto dentro do botao
+    flex: 1;
+    color: white;
+    text-align: center;
+}
+
+// criar pseudo elemento no html pelo css
+#page_home .main a span::after {
+    content: '';
+    background-image: url('../icones/search.svg');
+    width: 20px;
+    height: 20px;
+}

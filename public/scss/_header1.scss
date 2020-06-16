@@ -1,0 +1,27 @@
+header {
+    margin-top: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#page_home header a {
+    display: flex;
+    color: $color;
+    font-weight: 700;
+    @include breakpoint-less(large) {
+        position: absolute;
+        bottom: 48px;
+
+        left: 50%;
+        // centraliza
+        transform: translateX(-50%);
+    }
+}
+#page_home header a span {
+    display: flex;
+    background-image: url('../icones/log-in.svg');
+    width: 20px;
+    height: 20px;
+    margin-right: 16px;
+}

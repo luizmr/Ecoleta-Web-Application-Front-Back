@@ -1,0 +1,33 @@
+$roboto: 'Roboto', sans-serif;
+$ubuntu: 'Ubuntu', sans-serif;
+$bgColor: #f0f0f5;
+$color: #322153;
+$primaryColor: #34cb79;
+
+// Media Queries
+$breakpoints: (
+    small: 699px,
+    medium: 700px,
+    large: 900px,
+    xlarge: 1440px,
+);
+
+@mixin breakpoint($size) {
+    // pega o tamanho da tela
+    $breakpoint-value: map-get($breakpoints, $size);
+
+    // escreve a media query com o tamanho da tela
+    @media screen and (min-width: $breakpoint-value) {
+        @content;
+    }
+}
+
+@mixin breakpoint-less($size) {
+    // get the size value
+    $breakpoint-value: map-get($breakpoints, $size);
+
+    // write the media query
+    @media screen and (max-width: $breakpoint-value) {
+        @content;
+    }
+}
